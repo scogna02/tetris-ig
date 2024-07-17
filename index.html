@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris - Interactive Graphics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div id="instructions">
+        <h2>Instructions</h2> 
+        <p>Use arrow keys to move and rotate the pieces.</p>
+        <p>Left/Right: Move piece</p>
+        <p>Up: Rotate piece</p>
+        <p>Down: Move piece down faster</p>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="results">
+        <h2>Game Over</h2>
+        <p>Your score: <span id="finalScore"></span></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+    <button id="infoButton" onclick="toggleInstructions()">
+        <i class="fas fa-info-circle"></i>
+    </button>
+    <button id="toggleMusic" onclick="toggleMusic()">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <audio id="game-music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+</html>

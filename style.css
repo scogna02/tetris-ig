@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+body { margin: 0; font-family: 'Comfortaa', cursive; }
+canvas { display: block; }
+#score {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 6vh;
+  font-weight: bold;
+  color: rgb(197,191,186);
+}
+#instructions, #results { 
+    font: 16px 'Comfortaa', cursive;
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: rgba(0,0,0,0.8); 
+    color: white; 
+    padding: 30px;
+    border-radius: 30px;
+}
+button { 
+    font: 14px 'Comfortaa', cursive;
+    background: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 15px;
+}
+#toggleMusic, #infoButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(197,191,186);
+    position: absolute;
+}
+#toggleMusic {
+    bottom: 10px;
+    right: 10px;
+}
+#infoButton {
+    bottom: 10px;
+    left: 10px;
+}
+#toggleMusic:hover, #infoButton:hover {
+    color: rgb(255,255,255);
+}
